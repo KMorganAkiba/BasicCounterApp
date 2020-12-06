@@ -35,12 +35,34 @@
 
     <Button
         android:id="@+id/countButton"
+        android:layout_width="130dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="41dp"
+        android:onClick="increaseCount"
+        android:text="Increase by 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counterTextField" />
+
+    <Button
+        android:id="@+id/decreaseCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="17dp"
+        android:onClick="decreaseCount"
+        android:text="decrease by 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countButton" />
+
+    <Button
+        android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="120dp"
-        android:onClick="increaseCount"
-        android:text="Button"
+        android:layout_marginTop="15dp"
+        android:onClick="resetCount"
+        android:text="Reset"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/counterTextField" />
+        app:layout_constraintTop_toBottomOf="@+id/decreaseCount" />
 </androidx.constraintlayout.widget.ConstraintLayout>

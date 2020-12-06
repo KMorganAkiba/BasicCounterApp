@@ -20,9 +20,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void increaseCount(View view) {
-        count = count+1;
+        count = ++count;
         String newCount = String.valueOf(count);
         counter.setText(newCount);
-        System.out.println(count);
+
+    }
+
+    public void decreaseCount(View view) {
+        count = --count;
+        String newCount = String.valueOf(count);
+        counter.setText(newCount);
+    }
+
+    public void resetCount(View view) {
+        count = 0;
+        String newCount = String.valueOf(count);
+        counter.setText(newCount);
     }
 }
